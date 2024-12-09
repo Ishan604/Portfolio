@@ -1,0 +1,101 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  .project-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .project-title {
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 15px;
+  }
+  
+  .project-thumbnail {
+    text-align: justify; 
+    text-align-last: center; 
+    margin: 0 auto; 
+    width: 80%; 
+    line-height: 1.6; 
+  }
+  
+  .project-description {
+    font-size: 16px;
+    color: #666666;
+    line-height: 1.5;
+    margin-bottom: 25px;
+  }
+  
+  .figma-link-button {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #0acf83;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .figma-link-button:hover {
+    background-color: #088d63;
+  }
+  
+  /* Slider Styling */
+  .slider {
+    position: relative;
+    max-width: 600px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .slider-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slider-images img {
+    width: 50%;
+    height: 90%;
+  }
+  
+  button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 18px;
+    z-index: 1000;
+  }
+  
+  button.prev {
+    left: 10px;
+  }
+  
+  button.next {
+    right: 10px;
+  }
+  
+  button.prev:hover, button.next:hover {
+    background-color: #333333;
+  }
+  

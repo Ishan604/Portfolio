@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="p1.css">
+</head>
+<body>
+    <div class="project-container">
+        <h2 class="project-title">Project Name</h2>
+        <img src="img/Beige Brown Aesthetic Save The Date Editable Mockup Instagram Post.png" alt="Project Thumbnail" class="project-thumbnail">
+        <p class="project-description">
+          The Fauxica Home Page is a sleek and modern e-selling platform designed for showcasing and selling products like clothes, shoes, jackets, and more. The project highlights 
+          engaging user experiences with animations and hover interactions, making the interface dynamic and interactive. Utilizing Figma's powerful design tools, I crafted frames and components to 
+          ensure consistency and scalability throughout the design. The project emphasizes a user-friendly layout, 
+          visually appealing elements, and a seamless navigation flow to enhance the shopping experience for users.
+        </p>
+
+        <!-- Image Slider -->
+        <div class="slider">
+            <div class="slider-images">
+                <img src="img/New folder/Desktop - 1.png" alt="Project Image 1">
+            </div>
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+
+        <!-- Button to Open Figma -->
+        <button class="figma-link-button" onclick="toggleFigmaEmbed()">Open in Figma</button>
+
+        <!-- Figma Embed Container -->
+        <div id="figma-embed-container" style="display: none; margin-top: 20px;">
+            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" 
+                    width="800" 
+                    height="450" 
+                    src="https://embed.figma.com/design/YOKFRj9CaYh3VrLqRHzrfJ/Fauxica-Home-Page?node-id=4-2&embed-host=share" 
+                    allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+
+    <script src="p1.js"></script>
+    <script>
+        // Toggle visibility of Figma embed
+        function toggleFigmaEmbed() {
+            const embedContainer = document.getElementById('figma-embed-container');
+            if (embedContainer.style.display === 'none') {
+                embedContainer.style.display = 'block';
+            } else {
+                embedContainer.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

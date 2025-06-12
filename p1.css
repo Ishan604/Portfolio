@@ -23,11 +23,11 @@ body {
 }
 
 .project-thumbnail {
-  text-align: justify; 
-  text-align-last: center; 
-  margin: 0 auto; 
-  width: 80%; 
-  line-height: 1.6; 
+  text-align: justify;
+  text-align-last: center;
+  margin: 0 auto;
+  width: 80%;
+  line-height: 1.6;
 }
 
 .project-description {
@@ -97,4 +97,26 @@ button.next {
 
 button.prev:hover, button.next:hover {
   background-color: #333333;
+}
+
+/* Mobile Styling */
+@media (max-width: 768px) {
+  .project-container {
+    margin: 20px;
+    padding: 10px;
+  }
+
+  .project-thumbnail {
+    width: 100%;
+    height: auto;
+  }
+
+  .slider-images img {
+    width: 100%;
+  }
+
+  .figma-link-button {
+    width: 100%;
+    padding: 15px;
+  }
 }
